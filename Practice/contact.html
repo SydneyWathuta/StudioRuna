@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Studio Runa</title>
+  <link rel="stylesheet" href="CSS/contact.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="#">Portfolio</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <header>
+      <h1>Get in Touch</h1>
+      <p>Whether you're a coach, player, or club looking to build your online presence, I'm here to help. Fill out the form below and I'll respond within 1–2 business days.</p>
+    </header>
+
+    <form action="mailto:sydney@studioruna.com" method="POST" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="service">I'm interested in:</label>
+      <select id="service" name="service">
+        <option value="player">Player Portfolio</option>
+        <option value="trainer">Trainer Page</option>
+        <option value="club">Club Website</option>
+        <option value="general">General Inquiry</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <input type="submit" value="Send Message" />
+    </form>
+
+    <p class="direct">Prefer email? Reach out directly at <a href="mailto:sydney@studioruna.com">sydney@studioruna.com</a></p>
+  </main>
+  <footer>
+    Studio Runa © 2025 — Built for the game
+</footer>
+</body>
+</html>
